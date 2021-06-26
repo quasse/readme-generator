@@ -1,37 +1,45 @@
-# asdf
+# Title
 
   ## Description
   
-  asdf
+  description
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributors](#contributors)
-  * [License](#license)
   * [Tests](#tests)
+  * [Questions](#questions)
+  * [License](#license)
 
   ## Installation
 
-  asdf
+  installation instructions
 
   ## Usage
 
-  asdf
+  use instructions
 
-  ## Contributors
+  ## Contributing
 
-  asdf
-
-  ## License
-  
-  Apache License 2.0
+  contribution guidelines
 
   ## Tests
 
-  asdf
+  test instructions
 
   ## Questions
 
-  Please visit my [Github](https://github.com/quasse) account with any questions.
+  Please visit my [Github](https://github.com/quasse) for more information.
+
+  I can be reached at [quasse@gmail.com](quasse@gmail.com).
+
+  ## License
+
+  ![GNU License](https://img.shields.io/badge/license-GPL-blue)
+  
+  This application is covered under the GNU GPLv3 license
+
+  More information on this license can be found [here](https://choosealicense.com/licenses/gpl-3.0/).
+  
 

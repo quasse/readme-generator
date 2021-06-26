@@ -1,11 +1,11 @@
 // A function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
   if (license === "Apache License 2.0") {
-    return `![apache license](https://img.shields.io/badge/license-MIT-green)`;
+    return `![apache license](https://img.shields.io/badge/license-Apache-blue)`;
   } else if (license === "GNU GPLv3") {
     return `![GNU License](https://img.shields.io/badge/license-GPL-blue)`;
-  } else {
-    return `[MIT License](https://img.shields.io/badge/license-MIT-green)`;
+  } else if (license === "MIT") {
+    return `![MIT License](https://img.shields.io/badge/license-MIT-green)`;
   }
 }
 

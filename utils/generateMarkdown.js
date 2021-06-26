@@ -17,6 +17,36 @@ function generateMarkdown(data) {
   );
   return `# ${data.title}
 
+  ## Description
+  
+  ${data.description}
+
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributors](#contributors)
+  * [License](#license)
+  * [Tests](#tests)
+
+  ## Installation
+
+  ${data.install}
+
+  ## Usage
+
+  ${data.usage}
+
+  ## Contributors
+
+  ${data.contributors}
+
+  ## License
+  To do!
+
+  ## Tests
+
+  ${data.test}
+
 `;
 }
 

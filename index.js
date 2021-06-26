@@ -7,14 +7,40 @@ const questions = [
   {
     type: "input",
     name: "title",
-    message: "What would you like the title of the README to be?",
+    message: "What is the title of your project?",
+  },
+  {
+    type: "input",
+    name: "description",
+    message: "Please describe your project",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "How is this project used?",
+  },
+  {
+    type: "input",
+    name: "contributors",
+    message: "Who has contributed to this project?",
+  },
+  {
+    type: "input",
+    name: "test",
+    message: "How should users test your project?",
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "Which licesense would you like to select for your project?",
+    choices: ["Apache License 2.0", "GNU GPLv3", "MIT"],
   },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   console.log("filename is " + fileName);
-  console.log("Data is " + data.title);
+  console.log("Data is " + data);
 }
 
 // TODO: Create a function to initialize app
@@ -23,6 +49,10 @@ function init() {
 }
 
 // Function call to initialize app
-init().then((data) => {
-  return writeToFile("README.md", data);
-});
+init()
+  .then((answers) => {
+    return generateMarkdown(answers);
+  })
+  .then((data) => {
+    return writeToFile("README.md", data);
+  });
